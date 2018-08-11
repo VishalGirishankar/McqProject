@@ -1,0 +1,59 @@
+[
+    {
+        "QuestionHeader":"C# Multiple Choice Questions"
+    },
+    
+    {
+       "Que":"1. You're defining a custom type. Why would you use a struct instead of a class?  Enter the three best answers below.",
+       "Option":
+       [
+           "1 option",
+           "2 option",
+           "3 option",
+           "4 option"
+           
+
+       ], 
+       "Ans":"B"
+       
+    },
+    {
+       "Que":"2. Which of the C# features listed below allow you to customize the behavior of an existing class? Enter the two best answers below.",
+       "Option":
+       [
+           "1 option",
+           "2 option",
+           "3 option",
+           "4 option"
+
+       ], 
+       "Ans":"B"
+        
+    },
+    {
+       "Que":"3. Which of the following C# features allows you to specify a logical partitioning of types? Which allows you to create a physical partitioning of types? Pick one answer for logical and one for physical, and enter your answers below. ",
+       "Option":
+       [
+            "1 Option",
+            "2 option",
+            "3 option",
+            "4 option"
+       ], 
+       "Ans":"B"
+
+      
+    },
+    {
+        "Que":"4. In which of the scenarios below does boxing occur? List the letters of those scenarios where boxing occurs below",
+       "Option":
+       [
+            "1 Option",
+            "2 option",
+            "3 option",
+            "4 option"
+       ], 
+       "Ans":"B"
+
+    }
+    
+ ]
