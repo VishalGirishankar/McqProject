@@ -15,7 +15,7 @@ var OptionToNum = function(Opt) // to use convert Alpha options to numeric optio
 
 var CheckAnswerShow =function() // Onclick event of button #CheckAnswer
 {
-    
+    $("#CheckAnswerBtn").remove();
     for (let i = 1; i <Questions.length; i++)  // loop to create tables based on the number of Questions
     {   
         
@@ -29,18 +29,18 @@ var CheckAnswerShow =function() // Onclick event of button #CheckAnswer
         $(container).append(row2);
         $(container).append(row3);
         
-        $('#GRID').append(container);
+        $('.jumbotron').append(container);
     }
 
     for(let i=1; i<Questions.length; i++)
     {
-        $('#ShowQuestion'+i).html(Questions[i].Question);
+        $('#ShowQuestion'+i).html(Questions[i].Question +"<br>");
         if(Questions[i].CorrectOpt==User.Score[i])
         {   
             let OptNum= OptionToNum(Questions[i].CorrectOpt);
             console.log(OptNum);
             $( "#ShowQuestion"+i).after( "<div>Your Answer : </div>" );
-            $('#CorrectShowAnswer'+i).html("&emsp;&emsp;"+Questions[i].Options[OptNum]+ " ----> "+"Correct");
+            $('#CorrectShowAnswer'+i).html("&emsp;&emsp;"+Questions[i].Options[OptNum]+ " ----> "+"Correct <br>");
             $('#CorrectShowAnswer'+i).css("color","green");
         }
         else
@@ -51,7 +51,7 @@ var CheckAnswerShow =function() // Onclick event of button #CheckAnswer
             $('#WrongShowAnswer'+i).html("&emsp;&emsp;"+Questions[i].Options[WON]+ " ----> "+"Worng");
             $('#WrongShowAnswer'+i).css("color","red");
             $( "#WrongShowAnswer"+i).after( "<div>Correct Answer : </div>" );
-            $('#CorrectShowAnswer'+i).html("&emsp;&emsp;"+Questions[i].Options[CON]+ "----> Is the Right Answer");
+            $('#CorrectShowAnswer'+i).html("&emsp;&emsp;"+Questions[i].Options[CON]+ "----> Is the Right Answer <br>");
 
         }
     }
